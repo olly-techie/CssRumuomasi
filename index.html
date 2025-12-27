@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    * {
+      margin: 0;
+      color: #000;
+    }
+  /*  */
+
+     body { 
+      background-color: white;
+      padding-bottom: 60px;
+      color: White;
+      font-family: 'sans-serif';
+      overflow-x: hidden;
+
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      animation: slideleft 1s ease-out forwards;
+      align-items: center;
+      line-height: 140%;
+
+    }
+
+    @keyframes slideleft {
+      from {
+        transform: translateX(100%);
+      }
+
+      to {
+        transform: translateX(0%);
+      }
+    }
+
+    .who {
+      font-size: 24px;
+      font-weight: bold;
+      color: #222;
+      margin-top: 20px;
+    }
+
+    .head_badge {
+      width: 50%;
+      height: auto;
+    }
+
+
+    .badgie {
+      width: 20%;
+      height: auto;
+      margin: 4px;
+      animation: bounce 2s ease infinite 0.5s;
+    }
+
+    .header-badge {
+      width: 20%;
+      height: auto;
+      margin: 4px;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    .toppings {
+      display: flex;
+      flex-direction: row;
+      position: fixed;
+      z-index: 100;
+      color: #222;
+      gap: 10px;
+      text-align: center;
+      background-color: #f8f8ff;
+      font-weight: bold;
+    }
+
+    .top {
+      margin-top: 90px;
+      font-size: 20px;
+    }
+
+    .state {
+      font-size: 14px;
+    }
+
+    .school {
+      font-size: 21px;
+      font-weight: bolder;
+    }
+
+    .nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 105, 180, 0.9);
+      /* light pink with slight transparency */
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+      z-index: 1000;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      /* light hover effect */
+    }
+
+
+
+
+
+
+
+    .main {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+
+
+    .text {
+      margin: 30px 10px;
+      border-radius: 10px;
+    }
+
+
+
+    h2 {
+      margin-top: 60%;
+      margin-bottom: 40px;
+      margin-left: 50px;
+      margin-right: 50px;
+      font-size: 30px;
+      padding: 30px;
+      padding-bottom: 10px;
+      border-radius: 5px;
+      background-color: #007bfd;
+
+    }
+
+    h2:hover {
+      background-color: #0095ff;
+    }
+
+
+
+
+
+    @keyframes slidein {
+      0% {
+        transform: translateY(50px);
+        opacity: 0.5;
+      }
+
+      100% {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+
+    .pic {
+      width: 90%;
+      height: 100%;
+      border-radius: 10px;
+
+    }
+
+    .mapie {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .maps {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+
+    }
+
+    .visit {
+      top: 70%;
+      left: 60%;
+      position: absolute;
+      padding: 15px;
+      border-radius: 5px;
+      background-color: dodgerblue;
+      opacity: 0.7;
+      color: #000;
+      font-weight: bold;
+    }
+
+
+    .talkies {
+      background-color: ghostwhite;
+      border-radius: 10px;
+      animation: slidein 1s ease-out;
+
+      color: whitesmoke;
+      font-size: 17px;
+      line-height: 150%;
+    }
+      @media (min-width: 768px) {
+           .mapie {
+      width: 60%;
+      height: auto;
+      border-radius: 10px;
+    }
+      .principal {
+      width: 60%;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+.header-badge{
+        width: 10%;
+        height: auto;
+        margin: 0;
+        }
+        
+     
+          
+        
+        .pic{
+          margin: 4px;
+          width: 40%;
+        }
+        .talkies{
+          font-size: x-large;
+        }
+header{
+          margin-top: 5%;
+        }
+      }
+
+
+    .tk {
+      margin: 20px 10px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .principal {
+      width: 100%;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .princie {
+      margin: 0px 10px;
+
+    }
+
+    .list {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      line-height: 150%;
+
+    }
+
+    .offer {
+      margin: 20px;
+    }
+
+    .offn {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    footer {
+      background-color: lightpink;
+      text-align: center;
+      line-height: 150%;
+    }
+
+    .picture_section {
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 20px;
+      border-radius: 10px;
+      background-color: ghostwhite;
+      margin: 0 20px;
+
+
+    }
+
+
+    .bg {
+      margin-top: 10px;
+    }
+
+    .bq {
+      margin-bottom: 30px;
+    }
+
+
+    .pledge_container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 20px;
+      background-color: ghostwhite;
+      font-size: 17px;
+      line-height: 150%;
+    }
+
+    .css {
+      font-weight: bolder;
+      margin-top: 10px;
+    }
+
+    .rights {
+      font-size: 15px;
+      opacity: 0.7;
+    }
+
+    .x {
+      font-size: 17px;
+      font-weight: bold;
+    }
+
+    #toppings {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      transition: top 0.3s ease;
+      z-index: 1000;
+    }
+  </style>
+
+  </style>
+
+
+
+  <title>Css RUMUOMASI</title>
+</head>
+
+<body>
+  <!-- toppings section -->
+  <section class="toppings" id="toppings">
+    <img src="toppings_badge.jpg" alt="badgie" class="header-badge" />
+    <div>Landing Page Of COMMUNITY SECONDARY SCHOOL RUMUOMASI by Sampson Praise</div>
+  </section>
+  <header>
+    <div>
+      <div class="top">FOR MORAL AND ACADEMIC EXCELLENCE</div>
+      <div class="state">RIVERS STATE MINISTRY OF EDUCATION</div>
+      <div class="school">COMMUNITY SECONDARY SCHOOL,RUMUOMASI</div>
+      <div>Located In Rivers State, Nigeria <br /> Courage For Excellence</div>
+    </div>
+    <img src="toppings_badge.jpg" alt="head badge" class="head_badge" />
+
+  </header>
+  <!-- navigation bar -->
+  <div class="nav">
+    <a href="#intro" class="navbtn">intro</a>
+    <a href="#about" class="navbtn">about us</a>
+    <a href="#offer" class="navbtn">features</a>
+    <a href="#pledge" class="navbtn">our pledge</a>
+  </div>
+
+
+
+  <section id="intro" class="text">
+    <!-- hero section -->
+
+    </span>
+    <div class="who">Who we are </div>
+    <div class="talkies">
+      <div class="tk">🏫 Community Secondary School Rumuomasi
+        A Haven of Excellence
+        Located in the heart of Port Harcourt, Rivers State, we are committed to nurturing students with high moral
+        standards and strong personal values. At CSS Rumuomasi, excellence isn’t just a goal — it’s our culture.
+      </div>
+    </div>
+  </section>
+  <div class="maps">
+    <img src="maps.jpg" alt="maps" class="mapie" />
+    <div class="visit"><a href="https://maps.app.goo.gl/ioLRQUzPJY4TnZS4A">Visit us</a></div>
+  </div>
+
+  </div>
+  <!-- about section -->
+  <section class="text" id="about">
+    <div class="who">Know more about us</div>
+    <div class="talkies">
+      <div class="tk">We were founded in the year <u>2017
+        </u> over just 8 years of remarkable progress we have not just managed to beat the crisis of illiteracy but also
+        inculcated in the lives of many the habits of good morals remarkability and others.
+        <p>When we are not in our classrooms devotedly learning we're either hanging out in our social clubs or just
+          chilling😎 with friends and this institution couldn't have been this successful without our dearly beloved
+          Principal <u>
+            <span style="color: purple;">Mrs Owanete Inengim</u> </span> (middle)
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+<section class="offer" id="offer">
+    <div class="who">We Offer</div>
+    <div class="talkies">
+      <div class="tk">
+<div class="princie">
+  <figure>
+    <img src="principal.png" alt="principal" class="principal" />
+    <br />
+    <figcaption>Picture of The Principal MRS Owanete Inengim (middle)</figcaption>
+  </figure>
+  </div>
+        <div class="list">
+          <img src="ql.jpg" alt="stick man" class="badgie" />
+          <p class="offn">Quality Learning</p>
+          A calm and focused environment where students grow in knowledge, practical skills, and strong moral values.
+        </div>
+        <hr />
+        <div class="list">
+          <img src="qt.jpg" alt="stick man" class="badgie" />
+          <p class="offn">
+            Qualified Teachers</p>
+          Our dedicated and God-fearing staff are committed to academic excellence and building strong character in
+          every student.
+        </div>
+        <hr />
+        <div class="list"><img src="elf.jpg" alt="stick man" class="badgie" />
+          <p class="offn">Equipped Learning Facilities</p>
+          We provide well-structured classrooms, science and computer labs, and a study hall to support effective,
+          hands-on learning.
+        </div>
+        <hr />
+        <div class="list"><img src="vsl.jpg" alt="" class="badgie" />
+          <p class="offn">Vibrant Student Life</p>
+          We encourage growth beyond the classroom through clubs, cultural events, and interactive social activities
+          that shape confident, well-rounded students.
+        </div>
+        <hr />
+        <div class="list"><img src="sar.jpg" alt="" class="badgie" />
+          <p class="offn">
+            Sports & Recreation</p>
+          We promote physical fitness through fun and inclusive activities like soccer, athletics, and traditional games
+          — balancing learning with healthy play.
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- album section -->
+  <div class="who"> Album 🖼️</div>
+  <section id="album" class="picture_section">
+
+    <img src="toppings_badge.jpg" alt="pics" class="bg pic" />
+    <br>
+    <figcaption>Our School`s Badge</figcaption>
+    <img src="P3.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
+    <img src="T2.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Thanksgiving Celebration Service</figcaption>
+    <img src="C2.jpg" alt="" class="pic" />
+    <br>
+    <figcaption>Delta Tribe Cultural Day Presentation</figcaption>
+
+    <img src="T4.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Thanksgiving Celebration Service</figcaption>
+    <img src="P4.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
+    <img src="C1.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Calabari Tribe Cultural Day Presentation</figcaption>
+    <img src="P2.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
+    <img src="P1.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
+    <img src="T1.jpg" alt="pics" class="pic" />
+    <br>
+    <figcaption>Mrs Adaobi-Amadi on the Thanksgiving Service</figcaption>
+    <img src="T3.jpg" alt="pics" class="pic bq" />
+    <br>
+    <figcaption>Our Esteemed Chior Performing on the Thanksgiving Service</figcaption>
+   
+
+  </section>
+
+  <div class="who">Our Pledge</div>
+  <!-- pledge section -->
+  <section id="pledge" class="pledge_container">
+    <div class="pledge">
+      I pledge at all times and all places to uphold the value of Community Secondary School Rumuomasi <br />
+      <span class="offn">Which are</span> <br />
+      <ul>
+        <li>Faith in God⛪</li>
+        <li>Respect for others</li>
+        <li>Self discipline😊🚶</li>
+        <li>High moral standard🎓</li>
+        <li>and good personality so help me God🙏</li>
+      </ul>
+
+    </div>
+  </section>
+  <footer>
+
+   &copy;  <span class="css">2026 COMMUNITY SECONDARY SCHOOL RUMUOMASI</span>|WEBSITE BY PRAISE SAMPSON|GRAPHICS BY DAVID
+    SAMPSON|ASST. GRAPHICS BY DAVE<span class="x">X </span>
+    <div class="rights">ALL RIGHTS RESERVED</div>
+  </footer>
+  <script>
+    let lastScrollTop = 0;
+    const header = document.getElementById("toppings");
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        header.style.top = "-100px";
+      } else {
+        header.style.top = "0";
+      }
+      lastScrollTop = scrollTop;
+    });
+
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const talkies = document.querySelectorAll('.talkies');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.animationPlayState = 'running';
+            observer.unobserve(entry.target); // Trigger once, stop observing
+          }
+        });
+      }, { threshold: 0.1 });
+
+      talkies.forEach(el => {
+        el.style.animationPlayState = 'paused'; // Start paused
+        observer.observe(el);
+      });
+    });
+
+  </script>
+</body>
+
+</html>
