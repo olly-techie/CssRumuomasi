@@ -22,6 +22,7 @@
     * {
       margin: 0;
       color: #000;
+      overflow-x: hidden;
     }
   /*  */
 
@@ -96,17 +97,26 @@
         transform: translateY(-10px);
       }
     }
-
+.toppings_text{
+  display: flex;
+  flex-direction: column;
+}
+.toppings_badge {
+      width: 15%;
+      height: auto;
+      margin: 4px;
+}
     .toppings {
       display: flex;
       flex-direction: row;
       position: fixed;
       z-index: 100;
       color: #222;
-      gap: 10px;
-      text-align: center;
+      gap: 0;
+      text-align: left;
       background-color: #f8f8ff;
-      font-weight: bold;
+      
+     
     }
 
     .top {
@@ -420,8 +430,15 @@ figcaption{
 <body>
   <!-- toppings section -->
   <section class="toppings" id="toppings">
-    <img src="toppings_badge.jpg" alt="badgie" class="header-badge" />
-    <div>Landing Page Of COMMUNITY SECONDARY SCHOOL RUMUOMASI by Sampson Praise</div>
+    <img src="toppings_badge.jpg" alt="badgie" class="toppings_badge">
+  <div class="toppings_text">
+  <div>
+Landing Page Of COMMUNITY  
+    </div><div>
+SECONDARY SCHOOL RUMUOMASI
+   </div><div>
+    by Sampson Praise</div>
+  </div>
   </section>
   <header>
     <div>
