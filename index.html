@@ -217,10 +217,17 @@ align-items: flex-start;
     .pic {
       width: 90%;
       height: 100%;
+      animation: slideleft 1s ease-out;
       border-radius: 10px;
 
     }
-
+@keyframes slideleft{
+  from{
+    transform: translateX(50%);
+    opacity: 0.5;
+  }
+  
+}
     .mapie {
       width: 300px;
       height: auto;
@@ -613,7 +620,7 @@ https://github.com/sensatech-1"><img src="FB_IMG_17670174508420721.jpg" alt="Sam
 
 
     window.addEventListener('DOMContentLoaded', () => {
-      const talkies = document.querySelectorAll('.talkies');
+      const talkies = document.querySelectorAll('.talkies,.pic');
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
