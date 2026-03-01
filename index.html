@@ -1,701 +1,324 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-  <meta charset="UTF-8">
-<!-- Basic SEO Meta Tags -->
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="Community Secondary School Rumuomasi is a public educational institution dedicated to academic excellence, discipline, and youth empowerment." />
-<meta name="keywords" content="Community Secondary School Rumuomasi, Sampson Praise, Public School, Port Harcourt, Rumuomasi, CSS Rumuomasi, Ambassadors for Safe Mobility, Education, Secondary Schools in Rivers State, Government School, CSSR, Nigeria Schools" />
-<meta name="author" content="Sampson Praise" />
-
-<!-- Open Graph Meta Tags -->
-<meta property="og:title" content="Community Secondary School Rumuomasi Educational Institution" />
-<meta property="og:description" content="A public secondary school in Rumuomasi known for discipline, excellence, and youth empowerment through education." />
-<meta property="og:url" content="https://olly-techie.github.io/CssRumuomasi/" />
-<meta property="og:type" content="website" />
-<meta property="og:image" content="https://olly-techie.github.io/CssRumuomasi/toppings_badge.jpg" />
-<meta name="google-site-verification" content="vlzDhFRE49aizKmOOHgWNE_T7E7XqMNPWYmhu7l2ShM" />
-
-<style>
-    * {
-      margin: 0;
-      color: #000;
-      overflow-x: hidden;
-    }
-  /*  */
-
-     body { 
-      background-color: white;
-      padding-bottom: 60px;
-      color: White;
-      font-family: 'sans-serif';
-      overflow-x: hidden;
-
-    }
-    .brand{
-      width: 40px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    header {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-      animation: slideleft 1s ease-out forwards;
-      align-items: center;
-      line-height: 140%;
-
-    }
-
-    @keyframes slideleft {
-      from {
-        transform: translateX(100%);
-      }
-
-      to {
-        transform: translateX(0%);
-      }
-    }
-
-    .who {
-      font-size: 24px;
-      font-weight: bold;
-      color: #222;
-      margin-top: 20px;
-    }
-
-    .head_badge {
-      width: 50%;
-      height: auto;
-    }
-
-
-    .badgie {
-      width: 20%;
-      height: auto;
-      margin: 4px;
-      animation: bounce 2s ease infinite 0.5s;
-    }
-
-    .header-badge {
-      width: 20%;
-      height: auto;
-      margin: 4px;
-    }
-
-    @keyframes bounce {
-
-      0%,
-      100% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-    }
-.toppings_text{
-  display: flex;
-  flex-direction: column;
-}
-.toppings_badge {
-      width: 15%;
-      height: auto;
-      margin: 4px;
-}
-    .toppings {
-      display: flex;
-      flex-direction: row;
-      position: fixed;
-      z-index: 100;
-      color: #222;
-      gap: 0;
-      text-align: left;
-      background-color: #f8f8ff;
-      
-     
-    }
-
-    .top {
-      margin-top: 90px;
-      font-size: 20px;
-    }
-
-    .state {
-      font-size: 14px;
-    }
-
-    .school {
-      font-size: 21px;
-      font-weight: bolder;
-    }
-.contact{
-  margin-top: 10px;
-  margin-bottom: 30px;
-  margin-left: 10px;
-  display: flex;
- gap: 30px;
- flex-direction: row;
-align-items: flex-start;
-}
-    .nav {
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      background-color: rgba(255, 105, 180, 0.9);
-      /* light pink with slight transparency */
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      padding: 10px 0;
-      z-index: 1000;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    }
-
-    .nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      padding: 8px 12px;
-      border-radius: 5px;
-      transition: background-color 0.3s ease;
-    }
-
-    .nav a:hover {
-      background-color: rgba(255, 255, 255, 0.2);
-      /* light hover effect */
-    }
-
-
-
-
-
-
-
-    .main {
-      display: flex;
-      flex-direction: column;
-
-    }
-
-
-
-    .text {
-      margin: 30px 10px;
-      border-radius: 10px;
-    }
-
-
-
-    h2 {
-      margin-top: 60%;
-      margin-bottom: 40px;
-      margin-left: 50px;
-      margin-right: 50px;
-      font-size: 30px;
-      padding: 30px;
-      padding-bottom: 10px;
-      border-radius: 5px;
-      background-color: #007bfd;
-
-    }
-
-    h2:hover {
-      background-color: #0095ff;
-    }
-
-
-
-
-
-    @keyframes slidein {
-      0% {
-        transform: translateY(50px);
-        opacity: 0.5;
-      }
-
-      100% {
-        transform: translateY(0%);
-        opacity: 1;
-      }
-    }
-
-    .pic {
-      width: 90%;
-      height: 100%;
-      animation: slideleft 1s ease-out;
-      border-radius: 10px;
-
-    }
-@keyframes slideleft{
-  from{
-    transform: translateX(50%);
-    opacity: 0.5;
-  }
+<html>  <head>  
+  <meta charset="UTF-8">  
+<!-- Basic SEO Meta Tags -->  
+<meta charset="UTF-8" />  
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />  
+<meta name="description" content="Community Secondary School Rumuomasi is a public educational institution dedicated to academic excellence, discipline, and youth empowerment." />  
+<meta name="keywords" content="Community Secondary School Rumuomasi, Sampson Praise, Public School, Port Harcourt, Rumuomasi, CSS Rumuomasi, Ambassadors for Safe Mobility, Education, Secondary Schools in Rivers State, Government School, CSSR, Nigeria Schools" />  
+<meta name="author" content="Sampson Praise" />  <!-- Open Graph Meta Tags -->  <meta property="og:title" content="Community Secondary School Rumuomasi Educational Institution" />  
+<meta property="og:description" content="A public secondary school in Rumuomasi known for discipline, excellence, and youth empowerment through education." />  
+<meta property="og:url" content="https://olly-techie.github.io/CssRumuomasi/" />  
+<meta property="og:type" content="website" />  
+<meta property="og:image" content="https://olly-techie.github.io/CssRumuomasi/toppings_badge.jpg" />  
+<meta name="google-site-verification" content="vlzDhFRE49aizKmOOHgWNE_T7E7XqMNPWYmhu7l2ShM" />  <link rel="stylesheet" href="style.css">    <title>Css RUMUOMASI</title>  
+</head>  <body>  
   
-}
-    .mapie {
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .maps {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: relative;
-
-    }
-
-    .visit {
-      top: 70%;
-      left: 60%;
-      position: absolute;
-      padding: 15px;
-      border-radius: 5px;
-      background-color: dodgerblue;
-      opacity: 0.7;
-      color: #000;
-      font-weight: bold;
-    }
-
-
-    .talkies {
-      background-color: ghostwhite;
-      border-radius: 10px;
-      animation: slidein 1s ease      color: whitesmoke;
--out;
-
-      font-size: 19px;
-      line-height: 150%;
-    }
-      @media (min-width: 768px) {
-           .mapie {
-      width: 60%;
-      height: auto;
-      border-radius: 10px;
-    }
-      .principal {
-      width: 60%;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-.header-badge{
-        width: 10%;
-        height: auto;
-        margin: 0;
-        }
-        
-     
-          
-        
-        .pic{
-          margin: 4px;
-          width: 40%;
-        }
-        .talkies{
-          font-size: x-large;
-        }
-header{
-          margin-top: 5%;
-        }
-      }
-
-
-    .tk {
-      margin: 20px 10px;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .principal {
-      width: 100%;
-      border-radius: 10px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .princie {
-      margin: 0px 10px;
-
-    }
-
-    .list {
-      margin-top: 10px;
-      margin-bottom: 20px;
-      line-height: 150%;
-
-    }
-
-    .offer {
-      margin: 20px;
-    }
-
-    .offn {
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    footer {
-      background-color: royalblue;
-      text-align: center;
-      line-height: 150%;
-      font-size: 110%;
-    }
-
-    .picture_section {
-      display: flex;
-      flex-direction: column;
-      
-      align-items: center;
-      justify-content: space-evenly;
-      gap: 20px;
-      border-radius: 10px;
-      background-color: ghostwhite;
-      margin: 0 20px;
-
-
-    }
-
-
-    .bg {
-      margin-top: 10px;
-    }
-
-    .bq {
-      margin-bottom: 30px;
-    }
-figcaption{
-  font-size: 20px;
-}
-
-    .pledge_container {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0 20px;
-      background-color: ghostwhite;
-      font-size: 20px;
-      line-height: 150%;
-    }
-    .con{
-      font-size: 17px;
-      font-weight: bolder;
-      margin-top: 30px;
-      color: whitesmoke;
-      margin-left: 0;
-    }
-
-    .css {
-      font-weight: bolder;
-      margin-top: 10px;
-    }
-
-    .rights {
-      font-size: 15px;
-      opacity: 0.7;
-    }
-
-    .x {
-      font-size: 150%;
-      font-weight: bold;
-    }
-
-    #toppings {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      transition: top 0.3s ease;
-      z-index: 1000;
-    }
-  </style>
-
-  </style>
-
-
-
-  <title>Css RUMUOMASI</title>
-</head>
-
-<body>
-  <!-- toppings section -->
-  <section class="toppings" id="toppings">
-    <img src="toppings_badge.jpg" alt="badgie" class="toppings_badge" loading="lazy">
-  <div class="toppings_text">
-  <div>
-Landing Page Of COMMUNITY  
-    </div><div>
-SECONDARY SCHOOL RUMUOMASI
-   </div><div>
-    by Sampson Praise</div>
-  </div>
-  </section>
-  <header>
-    <div>
-      <div class="top">FOR MORAL AND ACADEMIC EXCELLENCE</div>
-      <div class="state">RIVERS STATE MINISTRY OF EDUCATION</div>
-      <div class="school">COMMUNITY SECONDARY SCHOOL,RUMUOMASI</div>
-      <div>Located In Rivers State, Nigeria <br /> Courage For Excellence</div>
-    </div>
-    <img src="toppings_badge.jpg" alt="head badge" class="head_badge" />
-
-  </header>
-  <!-- navigation bar -->
-  <div class="nav">
-    <a href="#intro" class="navbtn">intro</a>
-    <a href="#about" class="navbtn">about us</a>
-    <a href="#offer" class="navbtn">features</a>
-    <a href="#pledge" class="navbtn">our pledge</a>
-  </div>
-
-
-
-  <section id="intro" class="text">
-    <!-- hero section -->
-
-    </span>
-    <div class="who">Who we are </div>
-    <div class="talkies">
-      <div class="tk">🏫 Community Secondary School Rumuomasi
-        A Haven of Excellence
-        Located in the heart of Port Harcourt, Rivers State, we are committed to nurturing students with high moral
-        standards and strong personal values. At CSS Rumuomasi, excellence isn’t just a goal — it’s our culture.
-      </div>
-    </div>
-  </section>
-  <div class="maps">
- <img src="maps.jpg" alt="maps" class="mapie" />
-    <div class="visit"><a href="https://maps.app.goo.gl/ioLRQUzPJY4TnZS4A">Visit us</a></div>
-  </div>
-
-  </div>
-  <!-- about section -->
-  <section class="text" id="about">
-    <div class="who">Know more about us</div>
-    <div class="talkies">
-      <div class="tk">We were founded in the year <u>2017
-        </u> over just 8 years of remarkable progress we have not just managed to beat the crisis of illiteracy but also
-        inculcated in the lives of many the habits of good morals remarkability and others.
-        <p>When we are not in our classrooms devotedly learning we're either hanging out in our social clubs or just
-          chilling😎 with friends and this institution couldn't have been this successful without our dearly beloved
-          Principal <u>
-            <span style="color: purple;">Mrs Owanete Inengim</u> </span> (middle)
-        </p>
-      </div>
-    </div>
-  </section>
+<section id="website-main">  
+    <!-- toppings section -->  
+  <section class="toppings" id="toppings">  
+    <img src="toppings_badge.jpg" alt="badgie" class="toppings_badge" loading="lazy">  
+  <div class="toppings_text">  
+  <div>  
+Landing Page Of COMMUNITY    
+    </div><div>  
+SECONDARY SCHOOL RUMUOMASI  
+   </div><div>  
+    by Sampson Praise 😑</div>  
+  </div>  <br /><br /><br />
   
-    <img src="principal.png" alt="principal" class="principal" />
-     <figure>
+  </section>  
+  <header>  
+  <p class="motto">FOR MORAL AND ACADEMIC EXCELLENCE</p>
+  <h1>Community Secondary School, Rumuomasi</h1>
+  <p>Rivers State, Nigeria · Courage for Excellence</p>
+    <img src="toppings_badge.jpg" alt="head badge" class="head_badge" />    </header>  
+  <!-- navigation bar -->  
+  <div class="nav">  
+    <a href="#intro" class="navbtn">intro</a>  
+    <a href="#about" class="navbtn">about us</a>  
+    <a href="#offer" class="navbtn">features</a>  
+    <a href="#pledge" class="navbtn">our pledge</a>  
+  </div>    <section id="intro" class="text">  
+    <!-- hero section -->  </span>  
 
-    <br />
-    <figcaption>Picture of The Principal MRS Owanete Inengim (middle)</figcaption>
-  </figure>
-<section class="offer" id="offer">
-    <div class="who">We Offer</div>
-    <div class="talkies">
-      <div class="tk">
-<div class="princie">
+<div class="main-text">  
+<div class="who">Who we are </div>  
+  <div class="tk">🏫 Community Secondary School Rumuomasi  
+    A Haven of Excellence  
+    Located in the heart of Port Harcourt, Rivers State, we are committed to nurturing students with high moral  
+    standards and strong personal values. At CSS Rumuomasi, excellence isn’t just a goal — it’s our culture.  
+  </div>  
+</div>
+
+  </section>  
+  <div class="maps">  
+ <img src="maps.jpg" alt="maps" class="mapie" />  
+    <div class="visit"><a href="https://maps.app.goo.gl/ioLRQUzPJY4TnZS4A">Visit us</a></div>  
+  </div>    </div>  
+  <!-- about section -->  
+  <section class="text" id="about">  
  
-  </div>
-        <div class="list">
-          <img src="ql.jpg" alt="stick man" class="badgie" />
-          <p class="offn">Quality Learning</p>
-          A calm and focused environment where students grow in knowledge, practical skills, and strong moral values.
-        </div>
-        <hr />
-        <div class="list">
-          <img src="qt.jpg" alt="stick man" class="badgie" />
-          <p class="offn">
-            Qualified Teachers</p>
-          Our dedicated and God-fearing staff are committed to academic excellence and building strong character in
-          every student.
-        </div>
-        <hr />
-        <div class="list"><img src="elf.jpg" alt="stick man" class="badgie" />
-          <p class="offn">Equipped Learning Facilities</p>
-          We provide well-structured classrooms, science and computer labs, and a study hall to support effective,
-          hands-on learning.
-        </div>
-        <hr />
-        <div class="list"><img src="vsl.jpg" alt="" class="badgie" />
-          <p class="offn">Vibrant Student Life</p>
-          We encourage growth beyond the classroom through clubs, cultural events, and interactive social activities
-          that shape confident, well-rounded students.
-        </div>
-        <hr />
-        <div class="list"><img src="sar.jpg" alt="" class="badgie" />
-          <p class="offn">
-            Sports & Recreation</p>
-          We promote physical fitness through fun and inclusive activities like soccer, athletics, and traditional games
-          — balancing learning with healthy play.
-        </div>
-      </div>
-    </div>
+    <div class="main-text">  
+    <div class="who">Know more about us</div> 
+      <div class="tk">We were founded in the year <u>2017  
+        </u> over just 8 years of remarkable progress we have not just managed to beat the crisis of illiteracy but also  
+        inculcated in the lives of many the habits of good morals remarkability and others.  
+        <p>When we are not in our classrooms devotedly learning we're either hanging out in our social clubs or just  
+          chilling with friends and this institution couldn't have been this successful without our dearly beloved  
+          Principal <u>  
+            <span style="color: dodgerblue;">Mrs Owanete Inengim</u> </span> (middle)  
+        </p>  
+      </div>  
+    </div>  
+  </section>  <img src="principal.jpg" alt="principal" class="principal" />  
+ <figure>  
 
-  </section>
-  <!-- album section -->
-  <div class="who"> Album 🖼️</div>
-  <section id="album" class="picture_section">
+<br />  
+<figcaption>Picture of The Principal MRS Owanete Inengim (middle)</figcaption>
 
-    <img src="toppings_badge.jpg" alt="pics" class="bg pic" />
-    <br>
-    <figcaption>Our School`s Badge</figcaption>
-    <img src="P3.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="T2.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Thanksgiving Celebration Service</figcaption>
-    <img src="C2.jpg" alt="" class="pic" />
-    <br>
-    <figcaption>Delta Tribe Cultural Day Presentation</figcaption>
+  </figure>  
+<section class="offer" id="offer">  
 
-    <img src="T4.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Thanksgiving Celebration Service</figcaption>
-    <img src="P4.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="C1.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Calabari Tribe Cultural Day Presentation</figcaption>
-    <img src="P2.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="P1.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Ambassadors For Safe Mobility Club</figcaption>
-    <img src="T1.jpg" alt="pics" class="pic" />
-    <br>
-    <figcaption>Mrs Adaobi-Amadi on the Thanksgiving Service</figcaption>
-    <img src="T3.jpg" alt="pics" class="pic bq" />
-    <br>
-    <figcaption>Our Esteemed Chior Performing on the Thanksgiving Service</figcaption>
-   
+    <div class="talkies">  
+    <div class="who">We Offer</div>  
+      <div class="tk">  
+<div class="princie">    </div>  
+        <div class="list">  
+          <img src="ql.jpg" alt="stick man" class="badgie" />  
+          <p class="offn">Quality Learning</p>  
+          A calm and focused environment where students grow in knowledge, practical skills, and strong moral values.  
+        </div>  
+        <hr />  
+        <div class="list">  
+          <img src="qt.jpg" alt="stick man" class="badgie" />  
+          <p class="offn">  
+            Qualified Teachers</p>  
+          Our dedicated and God-fearing staff are committed to academic excellence and building strong character in  
+          every student.  
+        </div>  
+        <hr />  
+        <div class="list"><img src="elf.jpg" alt="stick man" class="badgie" />  
+          <p class="offn">Equipped Learning Facilities</p>  
+          We provide well-structured classrooms, science and computer labs, and a study hall to support effective,  
+          hands-on learning.  
+        </div>  
+        <hr />  
+        <div class="list"><img src="vsl.jpg" alt="" class="badgie" />  
+          <p class="offn">Vibrant Student Life</p>  
+          We encourage growth beyond the classroom through clubs, cultural events, and interactive social activities  
+          that shape confident, well-rounded students.  
+        </div>  
+        <hr />  
+        <div class="list"><img src="sar.jpg" alt="" class="badgie" />  
+          <p class="offn">  
+            Sports & Recreation</p>  
+          We promote physical fitness through fun and inclusive activities like soccer, athletics, and traditional games  
+          — balancing learning with healthy play.  
+        </div>  
+      </div>  
+    </div>    </section>  
+  <!-- album section -->  
 
-  </section>
+  <section id="album" class="talkies" >  
+  <div class="who"> Album 🖼️</div>  
+  <img src="toppings_badge.jpg" alt="pics" class="bg pic" />  
+<br>  
+<figcaption>Our School`s Badge</figcaption> <hr />  
+<img src="P3.jpg" alt="pics" class="pic" />  
+<br>  
+<figcaption>Ambassadors For Safe Mobility Club</figcaption><hr>  
+<img src="T2.jpg" alt="pics" class="pic" />  
+<br>  
+<figcaption>Thanksgiving Celebration Service</figcaption> <hr />  
+<img src="C2.jpg" alt="" class="pic" />  
+<br>  
+<figcaption>Delta Tribe Cultural Day Presentation</figcaption>
 
-  <div class="who">Our Pledge</div>
-  <!-- pledge section -->
-  <section id="pledge" class="pledge_container">
-    <div class="pledge">
-      I pledge at all times and all places to uphold the value of Community Secondary School Rumuomasi <br />
-      <span class="offn">Which are</span> <br />
-      <ul>
-        <li>Faith in God⛪</li>
-        <li>Respect for others</li>
-        <li>Self discipline😊🚶</li>
-        <li>High moral standard🎓</li>
-        <li>and good personality so help me God🙏</li>
-      </ul>
+<hr />  
+    <img src="T4.jpg" alt="pics" class="pic" />  
+    <br>  
+    <figcaption>Thanksgiving Celebration Service</figcaption><hr />  
+    <img src="P4.jpg" alt="pics" class="pic" />  
+    <br>  
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption><hr />  
+    <img src="C1.jpg" alt="pics" class="pic" />  
+    <br>  
+    <figcaption>Calabari Tribe Cultural Day Presentation</figcaption><hr />  
+    <img src="P2.jpg" alt="pics" class="pic" />  
+    <br>  
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption><hr />  
+    <img src="P1.jpg" alt="pics" class="pic" />  
+    <br>  
+    <figcaption>Ambassadors For Safe Mobility Club</figcaption><hr />  
+    <img src="T1.jpg" alt="pics" class="pic" />  
+    <br>  
+    <figcaption>Mrs Adaobi-Amadi on the Thanksgiving Service</figcaption><hr />  
+    <img src="T3.jpg" alt="pics" class="pic bq" />  
+    <br>  
+    <figcaption>Our Esteemed Chior Performing on the Thanksgiving Service</figcaption>  
+   <hr />    </section>    <div class="who">Our Pledge</div>  
+  <!-- pledge section -->  
+  <div class="pledge_container" id="pledge">  
+      I pledge at all times and all places to uphold the value of Community Secondary School Rumuomasi <br />  
+      <span class="offn">Which are</span>  
+      <ul>  
+        <li>Faith in God⛪</li>  
+        <li>Respect for others</li>  
+        <li>Self discipline😑</li>  
+        <li>High moral standard😑</li>  
+        <li>and good personality so help me God🙏</li>  
+      </ul>  </div>
 
-    </div>
-  </section>
-  <footer>
-     <span class="con">Contact Us</span>
-<div class="contact">
-<a href="http://wa.me/+2349134660893"><img src="FB_IMG_17670129822414358.jpg" alt="" class="brand"/></a>
-<a href="https://www.facebook.com/profile.php?id=61584699981465"><img src="FB_IMG_17670130017614645.jpg" alt="" class="brand"/></a>
-<a href="mailto: sampsonp370@gmail.com"><img src="FB_IMG_17670149691562472.jpg" alt="" class="brand"/></a>
-</div>
-<div style="
-width: 60%;"><hr /></div>
-<span class="con">Follow Us</span>
-<div class="contact">
-  <a href="https://www.facebook.com/profile.php?id=61584663991770"><img src="FB_IMG_17670130017614645.jpg" alt="" class="brand"/></a>
-  <a href="https://www.tiktok.com/@praisesampson2011?_r=1&_d=em86j45b6mk42d&sec_uid=MS4wLjABAAAAv5M6hvaAtCwbnDd9BTmc39iEhFo1WcRTXfWqHnZXWxRVsQjXt0sBp78Kh1A06cg4&share_author_id=7547046300224275474&sharer_language=en&source=h5_m&u_code=em8j36bkei6302&utm_source=copy&utm_campaign=client_share&share_link_id=c69eed71-a979-4bcf-bb8c-d9b12fba4d24&share_app_id=1340&ugbiz_name=Account&lang=en&user_id=7547046300224275474&sec_user_id=MS4wLjABAAAAv5M6hvaAtCwbnDd9BTmc39iEhFo1WcRTXfWqHnZXWxRVsQjXt0sBp78Kh1A06cg4"><img src="FB_IMG_17670130268974556.jpg" alt="Sampson Praise on tiktok" class="brand"/></a>
-  <a href="
-https://github.com/sensatech-1"><img src="FB_IMG_17670174508420721.jpg" alt="Sampson Praise on GitHub" class="brand"/></a>
-</div>
-   &copy;  <span class="css">2026 COMMUNITY SECONDARY SCHOOL RUMUOMASI</span>|WEBSITE BY PRAISE SAMPSON|GRAPHICS BY DAVID
-    SAMPSON|ASST. GRAPHICS BY DAVE<span class="x">X </span>
-    <div class="rights">ALL RIGHTS RESERVED</div>
-  </footer>
-
-<div id="loader"></div>
-<style>
-  
-
-#loader {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background: #0a0a0a;
-  z-index: 9999;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  <footer>  
+     <span class="con">Contact Us</span>  
+<div class="contact">  
+<a href="https://wa.me/+2349134660893"><img src="FB_IMG_17670129822414358.jpg" alt="Sampson Praise on WhatsApp dm" class="brand"/></a>  
+<a href="https://www.facebook.com/profile.php?id=61584699981465"><img src="FB_IMG_17670130017614645.jpg" alt="Sampson Praise on Facebook" class="brand"/></a>  
+<a href="mailto: sampsonp370@gmail.com"><img src="FB_IMG_17670149691562472.jpg" alt="Sampson Praise boss😜😜😜 on gmail" class="brand"/></a>  
+</div>  
+<div style="  
+width: 60%;"><hr /></div>  
+<span class="con">Follow Us</span>  
+<div class="contact">  
+  <a href="https://www.facebook.com/profile.php?id=61584663991770"><img src="FB_IMG_17670130017614645.jpg" alt="follow sampson praise boss on Facebook" class="brand"/></a>  
+  <a href="https://www.tiktok.com/@praisesampson2011?_r=1&_d=em86j45b6mk42d&sec_uid=MS4wLjABAAAAv5M6hvaAtCwbnDd9BTmc39iEhFo1WcRTXfWqHnZXWxRVsQjXt0sBp78Kh1A06cg4&share_author_id=7547046300224275474&sharer_language=en&source=h5_m&u_code=em8j36bkei6302&utm_source=copy&utm_campaign=client_share&share_link_id=c69eed71-a979-4bcf-bb8c-d9b12fba4d24&share_app_id=1340&ugbiz_name=Account&lang=en&user_id=7547046300224275474&sec_user_id=MS4wLjABAAAAv5M6hvaAtCwbnDd9BTmc39iEhFo1WcRTXfWqHnZXWxRVsQjXt0sBp78Kh1A06cg4"><img src="FB_IMG_17670130268974556.jpg" alt="Sampson Praise on tiktok" class="brand"/></a>  
+  <a href="  
+https://github.com/sensatech-1"><img src="FB_IMG_17670174508420721.jpg" alt="Sampson Praise on GitHub" class="brand"/></a>  </div>  
+<label for="text">Send Us An Email</label>  
+<div class="msg">  
+  <input type="text" name="text" id="text">   
+  <div class="msg-send"><a href="mailto: sampsonp370@gmail.com">Send</a></div>  
+  <p class="hire">Hire me SensaTech_Sampson Praise I make Professional and scalable websites <br />Dm me on <a href="https://wa.me/+2349134660893" class="dm"></a><u> Whatsapp</u></p>  </div><br />  
+   &copy;  <span class="css">2026 COMMUNITY SECONDARY SCHOOL RUMUOMASI</span>|WEBSITE BY PRAISE SAMPSON|GRAPHICS BY DAVID  
+    SAMPSON|ASST. GRAPHICS BY SensaTech Team😑✌️  
+    <div class="rights">ALL RIGHTS RESERVED</div>  
+  </footer>  <div id="loader"></div>  
+</section>  
+<style>  #loader {
+position: fixed;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+z-index: 9999;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 #loader::after {
-  content: '';
-  width: 50px;
-  height: 50px;
-  border: 6px solid #00bfff;
-  border-top: 6px solid transparent;
-  border-radius: 50%;
-  animation: spin 1s linear infinite;
+content: '';
+width: 50px;
+height: 50px;
+border: 6px solid #00bfff;
+border-top: 6px solid transparent;
+border-radius: 50%;
+animation: spin 1s linear infinite;
 }
 
 @keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+to {
+transform: rotate(360deg);
+}
 }
 </style>
 
-
-<script>
-  window.addEventListener("load", function () {
-    const loader = document.getElementById("loader");
-    loader.style.display = "none";
-  });
-</script>
-
+<script>  
+  window.addEventListener("load", function () {  
+    const loader = document.getElementById("loader");  
+    loader.style.display = "none";  
+  });  
+</script>    <script>  
+    let lastScrollTop = 0;  
+    const header = document.getElementById("toppings");  
+    window.addEventListener("scroll", function () {  
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;  
+      if (scrollTop > lastScrollTop) {  
+        header.style.top = "-100px";  
+      } else {  
+        header.style.top = "0";  
+      }  
+      lastScrollTop = scrollTop;  
+    });  
+  
+  
+    window.addEventListener('DOMContentLoaded', () => {  
+      const talkies = document.querySelectorAll('.talkies,.pic');  
+      const observer = new IntersectionObserver(entries => {  
+        entries.forEach(entry => {  
+          if (entry.isIntersecting) {  
+            entry.target.style.animationPlayState = 'running';  
+            observer.unobserve(entry.target); // Trigger once, stop observing  
+          }  
+        });  
+      }, { threshold: 0.1 });  
+  
+      talkies.forEach(el => {  
+        el.style.animationPlayState = 'paused'; // Start paused  
+        observer.observe(el);  
+      });  
+    });  
+      
+  
+  </script> 
   <script>
-    let lastScrollTop = 0;
-    const header = document.getElementById("toppings");
-    window.addEventListener("scroll", function () {
-      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > lastScrollTop) {
-        header.style.top = "-100px";
-      } else {
-        header.style.top = "0";
+(function () {
+
+  // 1️⃣ Create shimmer styles using JS
+  const style = document.createElement("style");
+  style.innerHTML = `
+    .shimmer-loading {
+      position: relative;
+      overflow: hidden;
+      background: #eee;
+    }
+
+    .shimmer-loading::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 150%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255,255,255,0) 0%,
+        rgba(255,255,255,0.7) 50%,
+        rgba(255,255,255,0) 100%
+      );
+      animation: shimmerMove 1.2s infinite;
+    }
+
+    @keyframes shimmerMove {
+      100% {
+        left: 100%;
       }
-      lastScrollTop = scrollTop;
+    }
+  `;
+  document.head.appendChild(style);
+
+  // 2️⃣ Scan all images
+  const images = document.querySelectorAll("img");
+
+  images.forEach(img => {
+
+    // If image is not already loaded
+    if (!img.complete) {
+      img.classList.add("shimmer-loading");
+    }
+
+    // When image loads → remove shimmer
+    img.addEventListener("load", () => {
+      img.classList.remove("shimmer-loading");
     });
 
-
-    window.addEventListener('DOMContentLoaded', () => {
-      const talkies = document.querySelectorAll('.talkies,.pic');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.style.animationPlayState = 'running';
-            observer.unobserve(entry.target); // Trigger once, stop observing
-          }
-        });
-      }, { threshold: 0.1 });
-
-      talkies.forEach(el => {
-        el.style.animationPlayState = 'paused'; // Start paused
-        observer.observe(el);
-      });
+    // If image fails → remove shimmer
+    img.addEventListener("error", () => {
+      img.classList.remove("shimmer-loading");
     });
-    
 
-  </script>
-</body>
+  });
 
-</html>
+})();
+</script></body>  </html> 
